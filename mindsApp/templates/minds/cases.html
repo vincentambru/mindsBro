@@ -1,0 +1,127 @@
+{% extends "minds/base.html" %}
+
+{% block title %}
+   this is cases Page
+{% endblock %}
+
+{% block headline_h1 %} Cases {% endblock %}
+{% block headline_h4 %} Agensy is compatible with popular WordPress plugins {% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="works">
+   <div class="container">
+     <ul>
+       <li>
+         <div class="title">
+           <h2>Explore our all works</h2>
+           <p>Adding new features. Working to help your section business grow. We’re constantly refining our product.</p>
+           </div>
+         <!-- end title --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works01.jpg' %}" alt="Image"></a> </figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Moments Matter Event Studio</a></h3>
+             <small>Branding — Website</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works02.jpg' %}" alt="Image"></a> </figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">More Powered Macbook Pro X</a></h3>
+             <small>Website — eCommerce</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works03.jpg' %}" alt="Image"></a> </figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Stan's Office Online Gateway</a></h3>
+             <small>Wordpress — eCommerce</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works04.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">David Courtney IOS Application</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works05.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Daria e-Commerce IOS Application</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works06.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Get Yo Tacos IOS Application</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works07.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Sass Dasboard Application</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works08.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Tropic Summer Digital Branding</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works09.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Freed Official Web Site</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+       <li>
+         <div class="project-box">
+           <figure class="project-image reveal-effect masker wow"> <a href="{% url 'case_detail' %}"><img src="{% static 'minds/images/works10.jpg' %}" alt="Image"> </a></figure>
+           <div class="project-content">
+             <h3><a href="{% url 'case_detail' %}">Electric Bike IOS Application</a></h3>
+             <small>Print — Branding</small> </div>
+           <!-- end project-content --> 
+         </div>
+         <!-- end project-box --> 
+       </li>
+     </ul>
+   </div>
+   <!-- end container --> 
+ </section>
+
+{% endblock %}

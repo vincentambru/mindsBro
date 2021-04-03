@@ -1,0 +1,42 @@
+{% extends "minds/base.html" %}
+
+{% block title %}
+   Login Page
+{% endblock %}
+
+
+
+{% block content %}
+<div id="login" class="login-form-container">
+    <header class="top-header">LOGIN - SIGN UP</header>
+    <fieldset>
+      <div class="input-wrapper">
+        <input type="text" placeholder="your@email.com" />
+      </div>
+      <div class="input-wrapper">
+        <input type="password" placeholder="password" />
+      </div>
+      <button id="continue" type="button">CONTINUE</button>
+    </fieldset>
+</div>
+<script>
+    var vContinue = document.getElementById("continue"),
+    vLogin = document.getElementById("login");
+
+vContinue.addEventListener("click", function() {
+   document.body.className += ' denied';
+}, false);
+
+var pfx = ["webkit", "moz", "MS", "o", ""];
+function PrefixedEvent(element, type, callback) {
+  for (var p = 0; p < pfx.length; p++) {
+    if (!pfx[p]) type = type.toLowerCase();
+    element.addEventListener(pfx[p]+type, callback, false);
+  }
+}
+
+PrefixedEvent(vLogin, "AnimationEnd", function () {
+  document.body.className = '';
+});
+</script>
+{% endblock %}
